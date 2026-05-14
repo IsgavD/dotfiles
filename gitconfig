@@ -23,6 +23,7 @@
 	# Don't prompt for commit messages for merge commits.
 	mergeoptions = --no-edit
 	commitGraph = true
+	autocrlf = input
 [help]
   # Autocorrect mistyped commands.
 	autocorrect = 1
@@ -189,3 +190,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
+[user]
+	email = isgavd@ai21.com
+	name = Isgav Davidowitz

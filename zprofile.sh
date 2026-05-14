@@ -2,7 +2,7 @@
 source ~/.shprofile
 
 # Enable completions
-autoload -U compinit && compinit
+autoload -U compinit && compinit -C
 
 if which brew &>/dev/null
 then
@@ -60,3 +60,15 @@ export RPROMPT='%{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%
 
 # more macOS/Bash-like word jumps
 export WORDCHARS=""
+
+# Created by `pipx` on 2022-02-06 11:31:40
+export PATH="$PATH:/Users/isgav/.local/bin"
+
+# Intel-era python.org framework installs removed from PATH during Apple Silicon
+# migration (2026-05-14). These were x86_64 binaries left over from the old Mac.
+# Python is managed via pyenv now.
+# PATH="/Library/Frameworks/Python.framework/Versions/3.10/bin:${PATH}"
+# PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
+# PATH="/Library/Frameworks/Python.framework/Versions/3.11/bin:${PATH}"
+
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"

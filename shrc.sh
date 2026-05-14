@@ -80,8 +80,8 @@ alias sha256="shasum -a 256"
 # Platform-specific stuff
 if quiet_which brew
 then
-  export HOMEBREW_PREFIX="$(brew --prefix)"
-  export HOMEBREW_REPOSITORY="$(brew --repo)"
+  export HOMEBREW_PREFIX="/usr/local"
+  export HOMEBREW_REPOSITORY="/usr/local/Homebrew"
   export HOMEBREW_AUTO_UPDATE_SECS=3600
   export HOMEBREW_BINTRAY_USER="$(git config bintray.username)"
   export HOMEBREW_DEVELOPER=1
